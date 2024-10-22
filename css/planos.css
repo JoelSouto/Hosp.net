@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+.hosp{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  color: rgb(13, 51, 147);
+  font-weight: bold;
+}
+.net{
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  width: 80px;
+}
+h2{
+  font-family: 'Courier New', Courier, monospace;
+}
+div{
+  border-style: solid;
+  border-radius: 10px;
+  display: inline-block;
+  
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+=======
 * {
     margin: 0;
     padding: 0;
@@ -57,4 +82,5 @@ header {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 500;
+>>>>>>> c829f0eebb809a71ae5d26f448a1daf4ceed5cfd
 }
