@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hosp{
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
@@ -21,4 +22,65 @@ div{
 }
 p{
   font-family: Arial, Helvetica, sans-serif;
+=======
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blueviolet;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-barra {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: rgb(255, 255, 255);
+}
+
+.nav-lista {
+    display: flex;
+    align-items: center;
+}
+
+.nav-lista ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: aliceblue;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
+
+.login-button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+>>>>>>> c829f0eebb809a71ae5d26f448a1daf4ceed5cfd
 }
