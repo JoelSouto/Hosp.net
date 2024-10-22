@@ -22,8 +22,8 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 100vw;
-    height: 50vh;
+    width: 60vw;
+    height: 40vh;
     background: rgb(66, 34, 168);
 }
 .left-login{
