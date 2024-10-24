@@ -88,13 +88,13 @@ a.header__nav--destacado {
 }
 
 .listas li::marker {
-    color: #cbe300;
+    color: #9932cc;
 }
 
 .assine {
     text-decoration: none;
     color: #0c1014;
-    background-color: #cbe300;
+    background-color: #9932cc;
     border-radius: 6px;
     text-transform: uppercase;
     font-size: 16px;
@@ -104,7 +104,7 @@ a.header__nav--destacado {
 }
 
 .assine:hover {
-    outline: 2px solid #cbe300;
+    outline: 2px solid #9932cc;
     background-color: transparent;
     color: white;
 }
