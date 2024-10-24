@@ -1,60 +1,101 @@
-#Titulo{
-    
-    font-size:  2em;
-    color: rgb(13, 51, 147);
+#Titulo {
+    font-size: 2em;
+    color: #8A2BE2; /* BlueViolet for a vibrant purple */
     text-align: center;
     font-style: italic;
 }
-h1{
-    font-size:  5em;
-    color: black;
+
+h1 {
+    font-size: 5em;
+    color: #000000; /* Pure black for strong contrast */
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
 }
-#A1{
-    color: plum
+
+#DotNet {
+    font-size: 5em; /* Larger size for emphasis */
+    color: #FF4500; /* Vibrant orange-red for contrast */
+    font-weight: bold; /* Make it bold */
 }
-body{
-    background-color: rgb(195, 91, 195);
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Garante que o body ocupe a altura total da tela */
-    margin: 0; /* Remove margens padrão */
-    background-color: rgb(195, 91, 195);
+
+#A1 {
+    color: #D8BFD8; /* Thistle for a soft lavender */
+    text-decoration: none;
+    transition: color 0.3s;
 }
-.main-login{
+
+#A1:hover {
+    color: #BA55D3; /* MediumOrchid on hover */
+}
+
+body {
+    background-color: #1A1A1A; /* Dark background for a sleek look */
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-login {
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 60vw;
     height: 50vh;
-    background: rgb(66, 34, 168);
-    box-shadow: 0px 10px 40px rgb(170, 123, 170);
+    background: #4B0082; /* Indigo for a rich purple */
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5); /* Subtle shadow */
     border-radius: 20px;
-}
-.right-login{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: 0%;
-}
-.left-login { /* faça */
-    font-size: 5px;
-    display: flex;
-    flex-direction: column; /* Alinha o conteúdo em coluna */
-    justify-content: flex-start; /* Coloca o conteúdo no topo */
-    align-items: center; /* Centraliza horizontalmente */
-    
-    background: rgb(66, 34, 168);
-    height: 100%; /* Caso queira que ocupe toda a altura */
+    padding: 20px;
 }
 
-#Login{
-    font-size: 2em;
+.left-login {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.card-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textfield {
+    margin: 10px 0;
+}
+
+.textfield input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #333333; /* Dark gray for inputs */
+    color: white; /* White text for contrast */
+}
+
+.btn-login {
+    background-color: #8A2BE2; /* Match the title color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #6A1B9A; /* Darker shade of purple on hover */
+}
+
+#Login {
+    font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
 }
