@@ -1,4 +1,5 @@
 #Titulo{
+    
     font-size:  2em;
     color: rgb(13, 51, 147);
     text-align: center;
@@ -16,23 +17,42 @@ h1{
 }
 body{
     background-color: rgb(195, 91, 195);
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Garante que o body ocupe a altura total da tela */
+    margin: 0; /* Remove margens padrão */
+    background-color: rgb(195, 91, 195);
 }
 .main-login{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 100vw;
-    height: 60vh;
+    width: 60vw;
+    height: 50vh;
     background: rgb(66, 34, 168);
+    box-shadow: 0px 10px 40px rgb(170, 123, 170);
+    border-radius: 20px;
 }
-.left-login{
+.right-login{
     display: flex;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     align-items: center;
+    margin: 0%;
+}
+.left-login { /* faça */
+    font-size: 5px;
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: flex-start; /* Coloca o conteúdo no topo */
+    align-items: center; /* Centraliza horizontalmente */
+    
     background: rgb(66, 34, 168);
-} 
+    height: 100%; /* Caso queira que ocupe toda a altura */
+}
+
 #Login{
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
