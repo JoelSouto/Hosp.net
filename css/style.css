@@ -1,101 +1,98 @@
-#Titulo {
-    font-size: 2em;
-    color: #8A2BE2; /* BlueViolet for a vibrant purple */
-    text-align: center;
-    font-style: italic;
-}
-
-h1 {
-    font-size: 5em;
-    color: #000000; /* Pure black for strong contrast */
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-}
-
-#DotNet {
-    font-size: 5em; /* Larger size for emphasis */
-    color: #FF4500; /* Vibrant orange-red for contrast */
-    font-weight: bold; /* Make it bold */
-}
-
-#A1 {
-    color: #D8BFD8; /* Thistle for a soft lavender */
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-#A1:hover {
-    color: #BA55D3; /* MediumOrchid on hover */
+* {
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #1A1A1A; /* Dark background for a sleek look */
+    background: linear-gradient(to bottom, #4B0082, #2E0C50);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+#Titulo {
+    font-size: 2em;
+    color: #E6E6FA;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 5em;
+    color: #FFFFFF;
+    font-style: italic;
 }
 
 .main-login {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60vw;
-    height: 50vh;
-    background: #4B0082; /* Indigo for a rich purple */
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    border-radius: 20px;
-    padding: 20px;
-}
-
-.left-login {
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin-right: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .card-login {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    background: #6A1B9A;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .textfield {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .textfield input {
-    padding: 10px;
+    padding: 15px;
     border: none;
     border-radius: 5px;
-    width: 200px;
-    background-color: #333333; /* Dark gray for inputs */
-    color: white; /* White text for contrast */
+    width: 100%;
+    background-color: #4B0082;
+    color: white;
+    font-size: 1em;
 }
 
 .btn-login {
-    background-color: #8A2BE2; /* Match the title color */
+    background-color: #8A2BE2;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 10px;
 }
 
 .btn-login:hover {
-    background-color: #6A1B9A; /* Darker shade of purple on hover */
+    background-color: #9B59B6;
+}
+
+#A1 {
+    color: #D8BFD8;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+#A1:hover {
+    color: #BA55D3;
 }
 
 #Login {
-    font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
+    font-size: 1.8em;
+    margin-bottom: 20px;
 }
