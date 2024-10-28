@@ -3,4 +3,10 @@ body {
   padding: 0px;
   background-color: #993399;
 }
+img{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 
