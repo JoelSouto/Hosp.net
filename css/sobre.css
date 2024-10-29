@@ -1,16 +1,61 @@
 body {
-  margin: 0px;
-  padding: 0px;
-  background-color: #993399;
-}
-img{
+  margin: 0;
+  padding: 0;
+  background-color: #4B0082; /* Cor roxa escura */
+  color: #ffffff;
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
   align-items: center;
-
-  height: 80vh;
-  width: 80vw;
+  height: 100vh;
+  text-align: center;
 }
 
+.container {
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Mantém o fundo levemente transparente */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden; /* Para evitar overflow */
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2.5em;
+}
+
+h2 {
+  margin: 20px 0;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+figure {
+  margin: 0 0 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0; /* Espaçamento entre a lista e o texto acima */
+}
+
+li {
+  font-size: 1.2em;
+  margin: 10px 0; /* Margem abaixo dos itens */
+  padding: 5px; /* Preenchimento nos itens */
+  background: rgba(255, 255, 255, 0.2); /* Fundo levemente transparente */
+  border-radius: 5px; /* Bordas arredondadas */
+}
