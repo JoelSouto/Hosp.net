@@ -5,10 +5,40 @@ body {
   color: #ffffff;
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
+  flex-direction: column;
+  align-items: center; /* Centraliza a barra de navegação */
+}
+
+.navbar {
+    width: 100%;
+    background-color: #6A1B9A;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-list li {
+    margin: 0 30px;
+}
+
+.navbar-list a {
+    color: #E6E6FA;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-list a:hover {
+    color: #D8BFD8;
+    transform: scale(1.1);
 }
 
 .container {
@@ -18,6 +48,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   overflow: hidden; /* Para evitar overflow */
+  margin-top: 20px; /* Espaço entre a navbar e o conteúdo */
 }
 
 h1 {
