@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wesley Victor Pereira Silva" />
+    <title>Planos</title>
+    <link rel="stylesheet" href="../css/planos.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="{{url_for('home')}}">Home</a></li>
+          <li><a href="{{url_for('sobre')}}">Sobre</a></li>
+          <li><a href="{{url_for('compras')}}">Dominios</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="titulo-principal">Escolha seu plano</h1>
+    <section class="preco">
+      <div class="plano-preco">
+        <h2 class="plano-preco_titulo">Essencial</h2>
+        <p><span class="plano-preco__valor">R$ 50,00</span> / mês</p>
+        <p><i>+2 meses grátis</i></p>
+        <ul class="listas">
+          <li>100 Websites</li>
+          <li>100GB de Armazenamento</li>
+          <li>IP dedicado</li>
+        </ul>
+        <a href="#" class="assine">Assine Já</a>
+      </div>
+      <div class="plano-preco">
+        <h2 class="plano-preco_titulo">Premium</h2>
+        <p><span class="plano-preco__valor">R$ 200,00</span> / mês</p>
+        <p><i>+4 meses grátis</i></p>
+        <ul class="listas">
+          <li>150 Websites</li>
+          <li>200GB de Armazenamento</li>
+          <li>IP dedicado</li>
+          <li>Transferência ilimitada</li>
+        </ul>
+        <a href="#" class="assine">Assine Já</a>
+      </div>
+      <div class="plano-preco">
+        <h2 class="plano-preco_titulo">Deluxe</h2>
+        <p><span class="plano-preco__valor">R$ 500,00</span> / mês</p>
+        <ul class="listas">
+          <li>10 Websites</li>
+          <li>300GB de Armazenamento</li>
+          <li>Transferência ilimitada</li>
+          <li>30 horas de suporte mensais</li>
+          <li>Email personalizado</li>
+        </ul>
+        <a href="#" class="assine">Assine Já</a>
+      </div>
+    </section>
+</body>
+</html>
