@@ -1,4 +1,3 @@
-/* Estilos Gerais */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,38 +6,38 @@
 }
 
 body {
-    background-color: #1f1033; /* Fundo roxo bem escuro */
-    color: #e0d7f3;
+    background: linear-gradient(to bottom, #4B0082, #2E0C50);
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 80px; /* Espaço para o navbar */
+    padding-top: 80px;
 }
 
 .container {
     max-width: 600px;
-    background-color: #2b1b4b; /* Fundo escuro para o container */
+    background-color: #6A1B9A;
     padding: 20px;
     border-radius: 8px;
     width: 100%;
     text-align: center;
+    color: #FFFFFF;
 }
 
 h1 {
     font-size: 2rem;
-    color: #f2e9ff; /* Cor clara para destaque */
+    color: #E6E6FA;
     margin-bottom: 15px;
 }
 
 p {
     font-size: 1rem;
     margin-bottom: 20px;
-    color: #c3b6e0; /* Roxo claro */
+    color: #FFFFFF;
 }
 
-/* Botões */
 .buttons {
     display: flex;
     justify-content: center;
@@ -46,35 +45,35 @@ p {
     margin-bottom: 20px;
 }
 
-.btn-purple, .btn-outline {
+.btn-purple {
     padding: 10px 20px;
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    color: #e6e6fa; /* Texto claro para contraste */
-}
-
-.btn-purple {
-    background-color: #4e3b63; /* Roxo escuro */
-    border: none;
-}
-
-.btn-outline {
-    background-color: transparent;
-    color: #4e3b63;
-    border: 2px solid #4e3b63;
 }
 
 .btn-purple:hover {
-    background-color: #392d53; /* Tom mais escuro no hover */
+    background-color: #9B59B6;
+}
+
+.btn-outline {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #8A2BE2;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-outline:hover {
-    background-color: #4e3b63;
-    color: #e6e6fa;
+    background-color: #9B59B6;
+    color: #FFFFFF;
 }
 
-/* Barra de pesquisa */
 .search-box {
     display: flex;
     gap: 10px;
@@ -87,21 +86,19 @@ p {
     padding: 10px;
     width: 70%;
     border-radius: 5px;
-    border: 1px solid #4e3b63; /* Roxo escuro */
-    background-color: #3a2d4e;
-    color: #f0f0f0;
+    border: 1px solid #4B0082;
+    background-color: #2E0C50;
+    color: #FFFFFF;
 }
 
 #search-button {
     padding: 10px 20px;
-    background-color: #4e3b63;
-    color: #f0f0f0;
+    background-color: #8A2BE2;
+    color: #FFFFFF;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 
-/* Opções de domínio */
 .domain-options {
     display: flex;
     gap: 10px;
@@ -110,25 +107,35 @@ p {
 }
 
 .domain-option {
-    background-color: #3a2d4e; /* Roxo escuro */
-    padding: 10px;
-    border-radius: 5px;
+    background-color: #4B0082;
+    padding: 20px;
+    border-radius: 8px;
     width: calc(33.333% - 10px);
     text-align: center;
-    color: #e0d7f3;
+    color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.domain-option:hover {
+    transform: scale(1.05);
+}
+
+.domain-name {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .price {
     display: block;
     margin-top: 5px;
     font-weight: bold;
-    color: #f4e1ff; /* Roxo claro */
+    color: #D8BFD8;
 }
 
-/* Navbar */
 .navbar {
     width: 100%;
-    background-color: #2b1b4b;
+    background-color: #4B0082;
     padding: 15px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -149,7 +156,7 @@ p {
 }
 
 .navbar-list a {
-    color: #e6e6fa;
+    color: #E6E6FA;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
@@ -157,11 +164,10 @@ p {
 }
 
 .navbar-list a:hover {
-    color: #d6c7e9;
+    color: #D8BFD8;
     transform: scale(1.1);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .domain-option {
         width: calc(50% - 10px);
