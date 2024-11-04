@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,29 +7,38 @@
 }
 
 body {
-    background-color: #111;
-    color: #fff;
+    background-color: #1f1033; /* Fundo roxo bem escuro */
+    color: #e0d7f3;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
+    padding-top: 80px; /* Espaço para o navbar */
 }
 
 .container {
+    max-width: 600px;
+    background-color: #2b1b4b; /* Fundo escuro para o container */
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
     text-align: center;
-    max-width: 500px;
 }
 
 h1 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    color: #f2e9ff; /* Cor clara para destaque */
+    margin-bottom: 15px;
 }
 
 p {
     font-size: 1rem;
     margin-bottom: 20px;
+    color: #c3b6e0; /* Roxo claro */
 }
 
+/* Botões */
 .buttons {
     display: flex;
     justify-content: center;
@@ -36,65 +46,142 @@ p {
     margin-bottom: 20px;
 }
 
-.btn-purple {
-    background-color: #6a0dad;
-    color: #fff;
+.btn-purple, .btn-outline {
     padding: 10px 20px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #e6e6fa; /* Texto claro para contraste */
+}
+
+.btn-purple {
+    background-color: #4e3b63; /* Roxo escuro */
+    border: none;
 }
 
 .btn-outline {
     background-color: transparent;
-    color: #fff;
-    padding: 10px 20px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    cursor: pointer;
+    color: #4e3b63;
+    border: 2px solid #4e3b63;
 }
 
+.btn-purple:hover {
+    background-color: #392d53; /* Tom mais escuro no hover */
+}
+
+.btn-outline:hover {
+    background-color: #4e3b63;
+    color: #e6e6fa;
+}
+
+/* Barra de pesquisa */
 .search-box {
     display: flex;
     gap: 10px;
     justify-content: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 #domain-input {
     padding: 10px;
     width: 70%;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #4e3b63; /* Roxo escuro */
+    background-color: #3a2d4e;
+    color: #f0f0f0;
 }
 
 #search-button {
     padding: 10px 20px;
-    background-color: #ff0066;
-    color: #fff;
+    background-color: #4e3b63;
+    color: #f0f0f0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
+/* Opções de domínio */
 .domain-options {
     display: flex;
-    justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .domain-option {
-    background-color: #222;
+    background-color: #3a2d4e; /* Roxo escuro */
     padding: 10px;
     border-radius: 5px;
-    width: 30%;
+    width: calc(33.333% - 10px);
     text-align: center;
+    color: #e0d7f3;
 }
 
 .price {
     display: block;
     margin-top: 5px;
     font-weight: bold;
-    color: #ff0066;
+    color: #f4e1ff; /* Roxo claro */
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #2b1b4b;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar-list li {
+    margin: 0 20px;
+}
+
+.navbar-list a {
+    color: #e6e6fa;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-list a:hover {
+    color: #d6c7e9;
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .domain-option {
+        width: calc(50% - 10px);
+    }
+
+    #domain-input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar-list li {
+        margin: 0 10px;
+    }
+
+    .domain-option {
+        width: 100%;
+    }
 }
