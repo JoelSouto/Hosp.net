@@ -17,4 +17,5 @@ def planos():
 @app.route("/dominio")
 def compras():
     return render_template("compras.html")
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0",debug=False)
